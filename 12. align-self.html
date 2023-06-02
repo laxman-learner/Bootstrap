@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Align Self Classes</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- align-self-stretch is the default class for vertical alignment -->
+    <div class="container cont-border cont-margin">
+      <div class="row align-items-start row-border row-margin" style="height: 500px">
+
+        <!-- align-items class do not have any effect  except for align-self-auto class
+        but align-content class react with all align-self classes -->
+
+        <div class="col-3 align-self-start col-margin bg-gray">
+          <h2>Align-Self-Start</h2>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa
+          dolorem iste mollitia optio provident, vero impedit, et eos nesciunt
+          eligendi libero, laborum ducimus officia!
+        </div>
+        <div class="col-4 align-self-center col-margin bg-green">
+            <h2>Align-Self-Center</h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sequi
+          vero veritatis asperiores atque architecto delectus quam tempore quo
+          nisi, odio iste assumenda nesciunt perferendis! 
+          
+        </div>
+        <div class="col-3 align-self-end col-margin bg-violet">
+            <h2>Align-Self-End</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+          recusandae vero sit aliquid quasi sed nihil pariatur, aliquam nesciunt
+          sunt, magnam quos, sint vitae eligendi!
+      </div>
+    </div>
+      <br>
+       <div class="row align-items-center  row-border row-margin" style="height: 500px">
+        <div class="col-3 align-self-start  col-margin bg-gray">
+         <h2>Align-Self-Start</h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sequi
+          vero veritatis asperiores atque architecto delectus quam tempore quo
+          nisi, odio iste assumenda nesciunt perferendis! 
+        </div>
+
+    <!-- align-self-auto react according to the parent div i.e. row -->
+
+        <div class="col-4 align-self-auto  col-margin bg-green">
+            <h2>Align-Self-Auto</h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sequi
+          vero veritatis asperiores atque architecto delectus quam tempore quo
+          nisi, odio iste assumenda nesciunt perferendis! 
+          
+        </div>
+        <div class="col-3 align-self-end  col-margin bg-violet">
+           <h2>Align-Self-End</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+          recusandae vero sit aliquid quasi sed nihil pariatur, aliquam nesciunt
+          sunt, magnam quos, sint vitae eligendi!
+       
+      </div>
+    </div>
+  </body>
+</html>

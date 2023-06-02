@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Reordering in Bootstrap</title>
+  </head>
+  <body>
+    <!-- order-first and order-last classes are used to reorder only two columns -->
+    <!-- order-first and order-last class exactly same for all screen sizes -->
+
+    <div class="container">
+      <div class="row row-border">
+        <div class="col order-last bg-pink">
+          <h2>First Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            voluptatem reprehenderit iure, explicabo asperiores blanditiis eius
+            quidem, consequatur quia accusantium qui esse non possimus
+            voluptatum ipsa ut ab architecto sapiente nemo natus dolorum.
+            Doloremque, nemo provident consectetur nesciunt iure fuga ratione
+            ipsa! Repudiandae suscipit possimus eos, magnam sequi nisi culpa.
+          </p>
+        </div>
+        <div class="col order-first bg-gray">
+          <h2>Second Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            ullam voluptate, nam nulla praesentium vel repellendus! Sint
+            voluptatibus dolores excepturi optio debitis hic dignissimos minus
+            nihil maiores? Quo facere modi provident, neque ratione ea
+            praesentium, fugiat laborum ad quos odit architecto, corrupti iste
+            minima. Sunt necessitatibus repudiandae id veniam praesentium?
+          </p>
+        </div>
+        <div class="col bg-blue">
+          <h2>Third Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ad
+            eligendi rem quis quam mollitia corrupti vel consequatur. Suscipit
+            esse, ea officiis perferendis quo quae numquam quam doloremque
+            eaque. Vitae nisi corporis ratione accusantium, eius placeat nostrum
+            at quae iure error dolorum cum deleniti nesciunt blanditiis
+            perferendis, dolorem pariatur. Quaerat!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- order-first and order-last classes differently for different screen sizes -->
+    <div class="container">
+      <div class="row row-border">
+        <div class="col order-md-last order-sm-first bg-pink">
+          <h2>First Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            voluptatem reprehenderit iure, explicabo asperiores blanditiis eius
+            quidem, consequatur quia accusantium qui esse non possimus
+            voluptatum ipsa ut ab architecto sapiente nemo natus dolorum.
+            Doloremque, nemo provident consectetur nesciunt iure fuga ratione
+            ipsa! Repudiandae suscipit possimus eos, magnam sequi nisi culpa.
+          </p>
+        </div>
+        <div class="col order-md-first order-sm-last bg-gray">
+          <h2>Second Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            ullam voluptate, nam nulla praesentium vel repellendus! Sint
+            voluptatibus dolores excepturi optio debitis hic dignissimos minus
+            nihil maiores? Quo facere modi provident, neque ratione ea
+            praesentium, fugiat laborum ad quos odit architecto, corrupti iste
+            minima. Sunt necessitatibus repudiandae id veniam praesentium?
+          </p>
+        </div>
+        <div class="col bg-blue">
+          <h2>Third Column</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ad
+            eligendi rem quis quam mollitia corrupti vel consequatur. Suscipit
+            esse, ea officiis perferendis quo quae numquam quam doloremque
+            eaque. Vitae nisi corporis ratione accusantium, eius placeat nostrum
+            at quae iure error dolorum cum deleniti nesciunt blanditiis
+            perferendis, dolorem pariatur. Quaerat!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Following two classes are used to reorder any number of columns -->
+    <!-- similarly "order-*" class => exactly works same for all screen sizes. and
+    "order-scr-*" class => differently for differnt screen sizes. Where * is a grid
+    number and can take value from 0-12 and 'scr' is the screen size and takes
+    values 'xl', 'lg','md', and 'sm' for extra large, large, medium and small
+    screen sizes respectively  for reordering all the columns differently -->
+  </body>
+</html>
