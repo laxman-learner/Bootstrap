@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0,5px;
+    font-weight: 500;
+}
+
+.header a{
+    color: black;
+}
+
+.header a i{
+    background-color: wheat;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+  
+}
+.floating-social{
+    position: fixed;
+    top: 25%;
+    right: 20px;
+    z-index: 999;
+
+}
+
+ .floating-item a i {
+    background-color:green ;
+    /* color: white; */
+    width: 45px;
+    height: 45px;
+    padding:7px 6px 5px 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.floating-media{
+    position: fixed;
+    top: 45%;
+    left: 20px;
+    z-index: 999;
+
+}
+.floating a i {
+    background-color:blue ;
+    /* color: white; */
+    width: 45px;
+    height: 45px;
+    padding:7px 6px 5px 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.floating-media .floating-item a i {
+    background-color:green ;
+    /* color: white; */
+    width: 45px;
+    height: 45px;
+    padding:7px 6px 5px 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar .nav-item{
+    padding-right: 25px;
+}
+
+ .fix img{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+video{
+    width:100%
+}
+
+.back{
+    background-image: url(./background.jpg);
+    background-size: cover;
+
+}
+
+.contact a .click i{
+    font-size: 30px;
+}
+  
