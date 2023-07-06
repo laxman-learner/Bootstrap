@@ -214,3 +214,43 @@ video {
   background-image: url(./Images/rai.jpg);
   background-size: cover;
 }
+
+/* background image from chairman's desk */
+
+.chairman {
+  background-image: url(./Images/chairman.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+/* background image for director's section */
+.director {
+  background-image: url(./Images/director.jpeg);
+  background-size: cover;
+  height: 500px;
+}
+
+/* background image for principal's section */
+
+.principal {
+  background-image: url(./Images/principal.png);
+  background-size: cover;
+  height: 500px;
+}
+
+/* Styling accordins */
+
+.accordion-button::after {
+  display: none;
+  /* to remove the drop down indicator at the end of each accordin items */
+}
+
+/* Providing background image for banner section of accordins */
+.faqs {
+  background-image: url(./Images/faqs.jpg);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  height: auto;
+  height: 500px;
+}
