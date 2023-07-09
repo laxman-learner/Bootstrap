@@ -1,1 +1,323 @@
-/* Making navbar responsive */
+/* Responsive landing page */
+
+/*  extra small screen sized devices : less than 576px  */
+@media (max-width: 576px) {
+  body {
+    text-align: left;
+  }
+  /* navbar - location and contact number section */
+  #navbar a {
+    text-align: left;
+    padding-left: 100px;
+    display: block;
+    margin: 0px;
+  }
+
+  .header a i {
+    margin-right: -10px;
+  }
+
+  /* logo section */
+  .fix img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 70px;
+    width: 80px;
+    object-fit: cover;
+  }
+
+  /* background image for about us section */
+  .back {
+    background-image: url(./Images/background.jpg);
+    height: 400px;
+  }
+
+  /* Social links */
+  .floating-item a i {
+    font-size: 12px;
+  }
+
+  .floating a i {
+    font-size: 15px;
+  }
+
+  .floating-social {
+    position: fixed;
+    top: 25%;
+    right: 0px;
+    z-index: 999;
+  }
+
+  .floating-media {
+    position: fixed;
+    top: 30%;
+    left: 0px;
+    z-index: 999;
+  }
+  .location p iframe {
+    height: 275px;
+  }
+
+  /* contact section */
+
+  .click a {
+    font-size: 20px;
+  }
+
+  .others a i {
+    font-size: 15px;
+  }
+
+  .others a {
+    padding-left: 30px;
+  }
+}
+
+/* small screen sized devices  576px or more */
+
+@media (min-width: 576px) {
+  body {
+    text-align: justify;
+  }
+
+  /* navbar - location and contact number section */
+  #navbar a {
+    text-align: left;
+    padding-left: 150px;
+    display: block;
+    margin: 0px;
+  }
+
+  /* navbar toggler */
+  .navbar button,
+  #navbarNav ul {
+    margin-left: 65px;
+  }
+
+  /* spacing between icons and their content in the navbar section */
+  .header a i {
+    margin-right: 0px;
+  }
+
+  /* logo section */
+  .fix img {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 120px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  /* background image for about us section */
+  .back {
+    background-image: url(./Images/background.jpg);
+    height: 500px;
+  }
+
+  /* Social links */
+  .floating-item a i {
+    font-size: 18px;
+  }
+
+  .floating-social {
+    position: fixed;
+    top: 30%;
+    right: 5px;
+    z-index: 999;
+  }
+
+  .floating a i {
+    font-size: 22px;
+  }
+
+  .floating-media {
+    position: fixed;
+    top: 35%;
+    left: 5px;
+    z-index: 999;
+  }
+
+  /* card section */
+  .card-section {
+    text-align: left;
+  }
+
+  /* location section */
+  .location p iframe {
+    height: 400px;
+  }
+
+  /* contact section */
+
+  .click a {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .others a i {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .others a {
+    padding-left: 30px;
+  }
+}
+
+/* medium screen sized devices : 768px or more  */
+
+@media (min-width: 768px) {
+  body {
+    text-align: justify;
+  }
+
+  /* navbar - location and contact number section */
+  #navbar a {
+    text-align: right;
+    display: inline-block;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  /* navbar toggler */
+  .navbar button,
+  #navbarNav ul {
+    margin-left: 65px;
+  }
+
+  /* spacing between icons and their content in the navbar section */
+  .header a i {
+    margin-right: 0px;
+  }
+
+  /* logo section */
+  .fix img {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 120px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  /* background image for about us section */
+  .back {
+    background-image: url(./Images/background.jpg);
+    height: 500px;
+  }
+
+  /* Social links */
+  .floating-item a i {
+    font-size: 25px;
+  }
+
+  .floating-social {
+    position: fixed;
+    top: 30%;
+    right: 5px;
+    z-index: 999;
+  }
+
+  .floating a i {
+    font-size: 30px;
+  }
+
+  .floating-media {
+    position: fixed;
+    top: 35%;
+    left: 5px;
+    z-index: 999;
+  }
+
+  /* card section */
+  .card-section {
+    text-align: left;
+  }
+
+  /* location section */
+  .location p iframe {
+    height: 500px;
+  }
+
+  /* contact section */
+
+  .click a {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .others a i {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .others a {
+    padding-left: 30px;
+  }
+}
+
+/* large screen sized devices : 992px or more */
+
+@media (min-width: 992px) {
+  /* to remove drop down indicator */
+
+  #navbarNav ul li {
+    margin-right: 25px;
+  }
+  .remove-indicator::after {
+    display: none !important;
+  }
+  #navbarNav > ul > li > a {
+    display: inline-block;
+    position: relative;
+  }
+
+  #navbarNav > ul > li > a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 28px;
+    bottom: 0;
+    transition: 0.3s;
+  }
+
+  #navbarNav > ul > li > a:hover:after {
+    width: 60%;
+  }
+
+  /* social link */
+  .floating-item a i {
+    font-size: 30px;
+  }
+
+  .floating-social {
+    position: fixed;
+    top: 30%;
+    right: 5px;
+    z-index: 999;
+  }
+
+  .floating a i {
+    font-size: 36px;
+  }
+
+  .floating-media {
+    position: fixed;
+    top: 35%;
+    left: 5px;
+    z-index: 999;
+  }
+
+  .location p iframe {
+    height: 600px;
+  }
+}
+
+/* extra large screen sized devices : 1200 px or more */
+/* extra extra large screen sized devices : 1400px or more */
+
+/* Responsive Affiliation page */

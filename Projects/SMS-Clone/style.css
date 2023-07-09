@@ -19,13 +19,17 @@ body {
 #navbar {
   background-color: whitesmoke;
 }
-.header a {
-  color: black;
+
+#navbar a {
+  display: inline-block;
 }
 
 #navbar a:hover {
   color: #fc4f00;
   font-size: 17px;
+}
+.header a {
+  color: black;
 }
 
 .header a i {
@@ -41,26 +45,6 @@ body {
 }
 
 /* Adding Navbar hover effect */
-
-#navbarNav > ul > li > a {
-  display: inline-block;
-  position: relative;
-}
-
-#navbarNav > ul > li > a:after {
-  content: "";
-  position: absolute;
-  background-color: #ff3c78;
-  height: 3px;
-  width: 0;
-  left: 28px;
-  bottom: 0;
-  transition: 0.3s;
-}
-
-#navbarNav > ul > li > a:hover:after {
-  width: 60%;
-}
 
 #navbarNav .dropdown-menu li a {
   text-decoration: none;
@@ -92,52 +76,8 @@ body {
 }
 
 /* Fixing social icons in left and right side */
-.floating-social {
-  position: fixed;
-  top: 25%;
-  right: 20px;
-  z-index: 999;
-}
 
-.floating-item a i {
-  background-color: green;
-  /* color: white; */
-  width: 45px;
-  height: 45px;
-  padding: 7px 6px 5px 10px;
-  margin-top: 10px;
-  font-size: 30px;
-  color: white;
-}
-
-.floating-media {
-  position: fixed;
-  top: 30%;
-  left: 20px;
-  z-index: 999;
-}
-.floating a i {
-  background-color: blue;
-  /* color: white; */
-  width: 45px;
-  height: 45px;
-  padding: 7px 6px 5px 10px;
-  margin-top: 10px;
-  font-size: 30px;
-  color: white;
-}
-
-.floating-media .floating-item a i {
-  background-color: green;
-  /* color: white; */
-  width: 45px;
-  height: 45px;
-  padding: 7px 6px 5px 10px;
-  margin-top: 10px;
-  font-size: 30px;
-  color: white;
-}
-
+/* fixing logo from top */
 .fix img {
   position: absolute;
   top: 0px;
@@ -167,13 +107,30 @@ video {
   background-color: whitesmoke;
 }
 
+/* social icon section */
+
+.floating-item a i {
+  background-color: green;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.floating a i {
+  background-color: blue;
+  margin: 2px;
+  color: white;
+  padding: 5px;
+}
+
 /* Gallery Section */
 
 .gallery img:hover {
   transform: scale(1.1);
   transition: 0.8s ease-in-out;
 }
-/* footer section */
+
+/* contact section */
 .footer {
   background-color: whitesmoke;
 }
