@@ -321,3 +321,57 @@
 /* extra extra large screen sized devices : 1400px or more */
 
 /* Responsive Affiliation page */
+
+@media (max-width: 576px) {
+  .affiliation-page img {
+    height: auto;
+    width: 84vw;
+    object-fit: cover;
+    margin: 8vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .affiliation-page img {
+    height: auto;
+    width: 60vw;
+    object-fit: cover;
+    margin: 0 20vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .affiliation-page img {
+    height: auto;
+    width: 35vw;
+    margin-left: 2vw;
+  }
+}
+
+/* responsive central page */
+
+@media (max-width: 767px) {
+  .central-page img {
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .central-page img {
+    width: 80vw;
+    height: auto;
+    margin: 0 10vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .central-page img {
+    width: 40vw;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+/* Responsive Chairman */
