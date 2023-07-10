@@ -167,24 +167,20 @@
 
       <!-- History Section -->
 
-      <div class="row bg-light mt-5">
-        <div class="col-6 m-4">
+      <div class="row bg-light mt-sm-2">
+        <div class="col-12 col-sm-12 col-lg-5 pt-lg-5 mt-lg-5">
           <img src="./Images/mission.jpeg" alt="" class="img-fluid" />
         </div>
 
-        <div class="col-5">
-          <strong style="font-size: 20px">Mission/Vision</strong>
+        <div class="col-12 col-sm-12 col-lg-7  text-center text-sm-center mt-3 mt-sm-3">
+          <strong class="fs-3">Mission/Vision</strong>
           <hr
-            style="
-              width: 120px;
-              height: 5px;
-              background-color: black;
-              margin-top: 0;
-            "
+            style="width: 120px; height: 5px; background-color: black"
+            class="mx-auto my-0"
           />
-          <strong style="font-size: 20px">Mission</strong>
+          <strong class="fs-3 mt-3 mt-sm-3">Mission</strong>
           <p>Excellence and Learning</p>
-          <p>
+          <p class="text-start text-sm-start px-3 px-sm-4 px-md-5">
             RAI School strives for excellence in everything it does, encouraging
             students to attain both academic success and personal achievement.
             The mission of RAI School is to provide each student a diverse
@@ -194,14 +190,14 @@
             independent, self-sufficient adults who will succeed and contribute
             responsibly in a global community.
           </p>
-          <strong style="font-size: 20px">Vision</strong>
-          <p>
+          <strong class="fs-3"">Vision</strong>
+          <p class="text-start text-sm-start px-3 px-sm-4 px-md-5">
             We at RAI School believe that each child entrusted to us will
             receive education in its finest form. Learning is a life-long
             process and all students and teachers are challenged to exceed their
             own expectations.
           </p>
-          <p>
+          <p class="text-start text-sm-start px-3 px-sm-4 px-md-5">
             No student will be left behind as they are provided with the skills
             required for life and work in the 21st century. When students
             complete their school lives, they will have the qualifications,
@@ -275,19 +271,20 @@
 
       <!-- social section ends -->
 
-      <!-- contact section -->
-      <div class="row footer mt-5">
-        <div class="col-4 img-fluid">
+      <!-- contact section starts -->
+
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -301,7 +298,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -326,7 +325,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -335,6 +337,23 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>

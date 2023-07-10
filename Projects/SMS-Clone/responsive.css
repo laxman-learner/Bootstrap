@@ -374,4 +374,30 @@
   }
 }
 
-/* Responsive Chairman */
+/* Responsive why rai page - competed no code required */
+
+/*  Responsive principal page*/
+
+@media (max-width: 576px) {
+  .principal {
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .principal {
+    width: 100vw;
+    height: 700px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .minus-margin {
+    margin-left: -100px;
+  }
+}
+
+/* Responsive Mission page - no need addition code */

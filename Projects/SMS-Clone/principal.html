@@ -170,32 +170,22 @@
 
       <!-- Details of Chairman's desk-->
 
-      <div class="row p-5 m-5">
+      <div class="row mt-3 mt-sm-3 ms-lg-5">
         <h4>From Principal's Desk</h4>
         <hr
-          style="
-            width: 100px;
-            height: 3px;
-            background-color: gray;
-            margin-top: 0;
-          "
+          style="width: 100px; height: 3px; background-color: gray"
+          class="mx-3 mx-sm-3"
         />
 
         <div class="row">
-          <div class="col-5 mt-5 principal">
+          <div class="col-12 col-sm-12 col-lg-6 px-0 px-sm-3 principal">
             <!-- background image -->
           </div>
 
-          <div class="col-7 pt-5">
-            <p
-              class="text-bg-light"
-              style="
-                font-size: 25px;
-                margin-top: 130px;
-                margin-left: -50px;
-                padding: 25px;
-              "
-            >
+          <div
+            class="col-12 col-sm-12 col-lg-6 py-3 py-sm-4 pt-lg-5 mt-lg-5 minus-margin"
+          >
+            <p class="text-bg-light fs-2 text-center text-lg-start fs-sm-2">
               "‘Coming together is a beginning; keeping together is progress;
               working together is success." <br />
 
@@ -203,12 +193,8 @@
             </p>
 
             <hr
-              style="
-                width: 200px;
-                height: 3px;
-                background-color: black;
-                margin-top: -40px;
-              "
+              style="width: 200px; height: 3px; background-color: black"
+              class="mt-0 mx-auto mx-sm-auto mx-lg-1 my-lg-0 mt-sm-4"
             />
           </div>
         </div>
@@ -216,7 +202,7 @@
 
       <!-- Chairman's opinion  -->
 
-      <div class="row mx-2 px-5">
+      <div class="row mx-2 mx-sm-3 mx-md-4 mt-lg-5 mx-lg-5">
         <p>
           I feel very pleased to let you know that RAI School has completed 20
           years in continuation.
@@ -320,19 +306,18 @@
 
       <!-- social section ends -->
 
-      <!-- contact section -->
-      <div class="row footer mt-5">
-        <div class="col-4 img-fluid">
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -346,7 +331,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -371,7 +358,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -380,6 +370,23 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
