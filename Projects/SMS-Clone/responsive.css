@@ -374,7 +374,56 @@
   }
 }
 
-/* Responsive why rai page - competed no code required */
+/* responsive director page */
+
+@media (max-width: 576px) {
+  .director-page hr {
+    margin: -15px 0px 20px 25px;
+  }
+
+  .director {
+    height: 600px;
+  }
+  .director-para {
+    margin-top: -215px;
+  }
+
+  .director-para hr {
+    margin-top: -60px;
+  }
+}
+/* responsive history page */
+
+@media (max-width: 576px) {
+  .back {
+    height: 500px;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .back {
+    height: 600px;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .back {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 110px) {
+  .back {
+    height: 650px;
+  }
+}
+.histroy-page hr {
+  margin: -5px auto 15px auto;
+}
+
+/* Responsive Mission page - no need addition code */
 
 /*  Responsive principal page*/
 
@@ -400,4 +449,4 @@
   }
 }
 
-/* Responsive Mission page - no need addition code */
+/* Responsive why rai page - competed no code required */

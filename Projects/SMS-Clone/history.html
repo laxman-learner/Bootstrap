@@ -164,21 +164,16 @@
 
       <!-- History Section -->
 
-      <div class="row bg-light mt-5">
-        <div class="col-5 back m-4">
+      <div class="row bg-light">
+        <div class="col-12 col-sm-12 col-md-5 back">
           <!-- background image -->
         </div>
 
-        <div class="col-6 px-5 m-3">
-          <h1>History</h1>
-          <hr
-            style="
-              width: 120px;
-              height: 5px;
-              background-color: black;
-              margin-top: 0;
-            "
-          />
+        <div
+          class="col-12 col-sm-12 col-md-7 mt-3 mt-sm-3 px-4 px-sm-5 ps-md-3 histroy-page"
+        >
+          <h1 class="text-center text-sm-center">History</h1>
+          <hr style="width: 120px; height: 5px; background-color: black" />
           <p>
             RAI School was established with the sole objective of integrating
             CBSE education in an excellent learning environment, in the year
@@ -278,19 +273,20 @@
 
       <!-- social section ends -->
 
-      <!-- contact section -->
-      <div class="row footer mt-5">
-        <div class="col-4 img-fluid">
+      <!-- contact section starts -->
+
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -304,7 +300,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -329,7 +327,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -338,6 +339,23 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>

@@ -34,8 +34,6 @@
   </head>
   <body>
     <div class="container-fluid">
-      <!-- Navbar section starts -->
-
       <div class="row bg-light" id="navbar">
         <div class="col-12 text-end header">
           <a href="#" class="text-decoration-none">
@@ -164,57 +162,38 @@
 
       <!-- Background section -->
 
-      <div class="row text-center pt-2 bg-light">
-        <p>Home/About Us/From Director's Desk</p>
-      </div>
+      <!-- Details of director's desk-->
 
-      <!-- Details of Chairman's desk-->
-
-      <div class="row p-5 m-5">
-        <h4>From Directors's Desk</h4>
-        <hr
-          style="
-            width: 100px;
-            height: 3px;
-            background-color: gray;
-            margin-top: 0;
-          "
-        />
-
-        <div class="row">
-          <div class="col-5 mt-5 director">
-            <!-- background image -->
-          </div>
-
-          <div class="col-7 pt-5">
-            <p
-              class="text-bg-light"
-              style="
-                font-size: 40px;
-                margin-top: 130px;
-                margin-left: -50px;
-                padding: 25px;
-              "
-            >
-              "Think Different" <br />
-              - Steve Jobs
-            </p>
-
-            <hr
-              style="
-                width: 200px;
-                height: 3px;
-                background-color: black;
-                margin-top: -40px;
-              "
-            />
-          </div>
+      <div class="row">
+        <div class="col-12 text-bg-light text-center pt-3">
+          <p>Home/About Us/From Director's Desk</p>
         </div>
       </div>
 
-      <!-- Chairman's opinion  -->
+      <div class="row">
+        <div class="col-12 ps-5 pt-4 director-page">
+          <p class="fs-3 ms-4">From Director's Desk</p>
+          <hr style="width: 150px; height: 3px; background: black" />
+        </div>
+      </div>
 
-      <div class="row mx-2 px-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 director">
+          <!-- background Image -->
+        </div>
+        <div class="col-12 col-sm-6 py-5 director-para">
+          <p class="fs-1 my-5 mx-4 px-3 py-3 text-bg-light">
+            "Think Different!" <br />
+            - Steve Jobs
+          </p>
+          <hr
+            style="width: 200px; height: 3px; background-color: black"
+            class="mx-5"
+          />
+        </div>
+      </div>
+
+      <div class="row m-5">
         <p>
           I would like to welcome you to RAI School where we have a history of
           accomplishment coupled with a unique campus atmosphere. We expect our
@@ -225,10 +204,11 @@
           actively embracing our school culture of compassion, excellence and
           teamwork.
         </p>
-        <p>Kind Wishes,</p>
+        <p>Best Wishes,</p>
         <p>Abhinav Singhania</p>
-        <p>Managing Director - RAI School</p>
+        <p>Managing Director – RAI School</p>
       </div>
+      <!-- Chairman's opinion  -->
 
       <!-- social section starts -->
 
@@ -294,19 +274,20 @@
 
       <!-- social section ends -->
 
-      <!-- contact section -->
-      <div class="row footer mt-5">
-        <div class="col-4 img-fluid">
+      <!-- contact section starts -->
+
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -320,7 +301,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -345,7 +328,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -354,6 +340,23 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
