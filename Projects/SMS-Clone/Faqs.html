@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMS Landing Page</title>
+    <title>FAQs</title>
 
     <!-- Bootstrap CDN link -->
     <link
@@ -52,7 +52,9 @@
 
       <div class="row">
         <div class="col-2 bg-light fix">
-          <a href="#"><img src="./Images/logo.png" class="logo" alt="" /></a>
+          <a href="index.html"
+            ><img src="./Images/logo.png" class="logo" alt=""
+          /></a>
         </div>
 
         <div class="col-10 bg-light">
@@ -71,7 +73,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -227,20 +229,25 @@
       <!-- Banner section -->
 
       <div class="row">
-        <div class="col-12 faqs">
+        <div class="col-12">
           <!-- Background image for banner section -->
+          <img
+            src="./Images/faqs.jpg"
+            class="rounded img-fluid faq-image"
+            alt=""
+          />
         </div>
-        <p class="text-center pt-2">Home/About Us/FAQs</p>
+        <p class="text-center pt-3">Home/About Us/FAQs</p>
       </div>
 
-      <div class="row mx-4 mt-3">
-        <p class="text-center px-5">
+      <div class="row mx-1 mx-sm-3 mx-md-4 px-md-1 mt-3">
+        <p>
           We appreciate that parents/careers who are new to our school will have
           many questions and concerns regarding their child’s education, school
           timings, protocols and a variety of other topics.
         </p>
-        <p class="text-center">Here is a list of Frequently Asked Questions.</p>
-        <p class="text-center">
+        <p>Here is a list of Frequently Asked Questions.</p>
+        <p>
           We hope that parents are able to find information they are looking for
           quickly without having to take time out to contact the school. If your
           particular question is not answered here then please do contact the
@@ -249,8 +256,8 @@
       </div>
       <!-- Accordin/collapse section -->
 
-      <div class="row bg-light pt-5 px-5">
-        <p style="font-size: 25px">School Attendence and Time Keeping</p>
+      <div class="row bg-light py-2 px-3 px-sm-4 px-md-5 py-sm-2">
+        <p class="fs-3 fs-sm-1">School Attendence and Time Keeping</p>
         <div class="accordion" id="myAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="item1">
@@ -267,7 +274,7 @@
             </h2>
             <div
               id="collapse1"
-              class="accordion-collapse collapse"
+              class="accordion-collapse collapse show"
               aria-labelledby="item1"
               data-bs-parent="#myAccordion"
             >
@@ -400,19 +407,20 @@
         </div>
       </div>
 
-      <!-- contact section -->
-      <div class="row footer pt-3" style="margin-top: 150px">
-        <div class="col-4 img-fluid">
+      <!-- contact section starts -->
+
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -426,7 +434,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -451,7 +461,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -460,10 +473,37 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
 
-    <!-- external js cdns -->
+    <!-- scroll to top section -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="scrollTop" onclick="scrollToTop()">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- scroll top -->
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>

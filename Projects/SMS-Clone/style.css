@@ -202,12 +202,22 @@ video {
   /* to remove the drop down indicator at the end of each accordin items */
 }
 
-/* Providing background image for banner section of accordins */
-.faqs {
-  background-image: url(./Images/faqs.jpg);
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  height: auto;
-  height: 500px;
+/* scroll to top button */
+
+.scrollTop i {
+  font-size: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 1px solid blue;
+  padding: 0px 5px;
+  background-color: darkblue;
+  color: white;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+.scrollTop i:hover {
+  background-color: aqua;
+  color: black;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMS Landing Page</title>
+    <title>Gallery Page 2</title>
 
     <!-- Bootstrap CDN link -->
     <link
@@ -52,7 +52,9 @@
 
       <div class="row">
         <div class="col-2 bg-light fix">
-          <a href="#"><img src="./Images/logo.png" class="logo" alt="" /></a>
+          <a href="index.html"
+            ><img src="./Images/logo.png" class="logo" alt=""
+          /></a>
         </div>
 
         <div class="col-10 bg-light">
@@ -71,7 +73,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -229,7 +231,7 @@
       <!-- Gallery Section -->
 
       <div class="row mt-5 gallery">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img
             class="img-fluid"
             src="./Images/gal9.jpeg"
@@ -238,15 +240,15 @@
           />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img class="img-fluid" src="./Images/gal10.jpeg" alt="" />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img src="./Images/gal11.jpeg" class="img-fluid" alt="" />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img
             class="img-fluid"
             src="./Images/gal12.jpg"
@@ -254,25 +256,24 @@
             style="height: 200px; object-fit: cover; width: 100%"
           />
         </div>
-      </div>
 
-      <div class="row mt-5 gallery">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img src="./Images/gal13.jpg" class="img-fluid" alt="" />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img src="./Images/gal4.jpg" class="img-fluid" alt="" />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img src="./Images/gal5.jpg" class="img-fluid" alt="" />
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <img src="./Images/gal16.jpg" class="img-fluid" alt="" />
         </div>
       </div>
+
       <!-- pagination section ends -->
       <div class="row my-5">
         <ul class="pagination justify-content-center">
@@ -300,19 +301,18 @@
         </ul>
       </div>
 
-      <!-- contact section -->
-      <div class="row footer pt-3" style="margin-top: 150px">
-        <div class="col-4 img-fluid">
+      <div class="row footer mt-2 pt-4">
+        <div class="col-md-4 img-fluid d-none d-md-block">
           <img src="./Images/logo.png" alt="" />
         </div>
 
-        <div class="col-4 mt-4 contact">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
           <div class="click">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
-          <div class="others text-dark">
+          <div class="others text-dark text-start mx-sm-3">
             <a href="#">
               <i class="fas fa-map-marker-alt"></i>Naxal (Near Balmandir
               Compound), Kathmandu
@@ -326,7 +326,9 @@
           </div>
         </div>
 
-        <div class="col-4 text-end mt-4 px-5">
+        <div
+          class="col-12 col-12 col-sm-6 col-md-4 text-start text-sm-end mt-4 px-5"
+        >
           <h2 class="text-uppercase">Quick Links</h2>
           <a href="#" class="d-block text-dark text-decoration-none"
             >Academics</a
@@ -351,7 +353,10 @@
           >
         </div>
       </div>
+
       <!-- contact section ends -->
+
+      <!-- footer section starts -->
 
       <div class="row text-center mt-5">
         <p style="font-size: large">
@@ -360,17 +365,37 @@
           <strong>Laxman Dhami</strong>
         </p>
       </div>
+      <!-- footer section ends -->
     </div>
 
-    <!-- external js cdns -->
+    <!-- scroll to top section -->
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="scrollTop" onclick="scrollToTop()">
+      <i class="fas fa-angle-up"></i>
+    </div>
 
-    <!-- Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <!-- scroll top -->
 
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+    <!-- jquery library cdn for proper working of drop down menus on click  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- js cdn link for hamburgur icon to work properly  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Necessary code to work properly drop down list on click and again click -->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-toggle").click(function (e) {
+          e.preventDefault();
+          $(this).next(".dropdown-menu").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
